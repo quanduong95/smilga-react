@@ -55,7 +55,7 @@ const App = () => {
             <FaChevronLeft />
           </button>
           <button
-            className='prev-btn'
+            className='next-btn'
             onClick={() => nextPerson()}
           >
             <FaChevronRight />
