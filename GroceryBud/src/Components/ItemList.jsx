@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import Item from './Item';
-const ItemList = ({ items, removeItem }) => {
+const ItemList = ({ items, removeItem, checkItem }) => {
   return (
     <div>
       {items.map((item) => (
@@ -8,6 +8,7 @@ const ItemList = ({ items, removeItem }) => {
           key={nanoid()}
           item={item}
           removeItem={removeItem}
+          checkItem={checkItem}
         />
       ))}
     </div>
