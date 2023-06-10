@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <main>
+    <main className='main'>
       <Form addColor={addColor} />
       <ColorList colors={colors} />
       <ToastContainer
