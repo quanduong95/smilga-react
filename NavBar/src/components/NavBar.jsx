@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <section className='nav'>
+    <nav className='nav'>
       <div className='nav-center'>
         <div className='nav-header'>
           <img
@@ -38,8 +38,15 @@ const NavBar = () => {
             </ul>
           </div>
         )}
+        <ul className='icons'>
+          {social.map((icon) => (
+            <li key={icon.id}>
+              <a href={icon.url}>{icon.icon}</a>
+            </li>
+          ))}
+        </ul>
       </div>
-    </section>
+    </nav>
   );
 };
 
